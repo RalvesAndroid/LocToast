@@ -51,7 +51,7 @@ def localizacao(hlat,hlon):
     segundo="{:02d}".format(dt.second)
     print(time.strftime("%I %M %p on %A, %B %e, %Y"))
     result=(time.strftime("%Y")+mes+dia+hora+minuto+segundo)
-    #print(result)
+    
     print(vlat)
     print(vlong)
 
