@@ -40,7 +40,6 @@ def localizacao(hlat,hlon):
         vfonte='gps'
     else:
         vfonte='network'
-    print(loc)
     vlat=loc[vfonte]['latitude']
     vlong=loc[vfonte]['longitude']
     dt = datetime.today()
@@ -84,5 +83,16 @@ LongPin=float(lido.split(',')[1])
 print(latPin)
 print(LongPin)
 while(True):
- localizacao(latPin,LongPin)
- time.sleep(20)
+ 
+ try:
+    localizacao(latPin,LongPin)
+    time.sleep(20)
+
+    # código que pode gerar uma exceção
+    print('teste')
+ except Exception as e:
+    # código que será executado se uma exceção for gerada
+    print(f"Erro: {e}")
+  #finally:
+    # código que será executado independentemente de uma exceção ser gerada
+    #print("Fim do programa")
