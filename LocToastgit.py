@@ -87,9 +87,6 @@ while(True):
  try:
     localizacao(latPin,LongPin)
     time.sleep(20)
-
-    # código que pode gerar uma exceção
-    print('teste')
  except Exception as e:
     # código que será executado se uma exceção for gerada
     print(f"Erro: {e}")
