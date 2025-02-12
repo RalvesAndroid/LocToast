@@ -90,6 +90,3 @@ while(True):
  except Exception as e:
     # código que será executado se uma exceção for gerada
     print(f"Erro: {e}")
-  #finally:
-    # código que será executado independentemente de uma exceção ser gerada
-    #print("Fim do programa")
