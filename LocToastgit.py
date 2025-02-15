@@ -26,8 +26,6 @@ def distance(p1, p2):
 
     
 def localizacao(hlat,hlon):
-    #opt=droid.dialogGetInput('','')
-    #droid = android.Android()
     droid.startLocating()
     #event = droid.eventWait(1000).result
     time.sleep(15)
